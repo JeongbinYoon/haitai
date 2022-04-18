@@ -3,7 +3,9 @@ import './HTHoneyStory.css';
 
 function HTHoneyStory() {
     return (
-        <div></div>
+        <div>
+            <img src="images/honeystory.png" alt="honeystory" />
+        </div>
     )
 }
 

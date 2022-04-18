@@ -3,7 +3,9 @@ import './HTHeader.css';
 
 function HTHeader() {
     return (
-        <div></div>
+        <div>
+            <img src="images/header.png" alt="header" />
+        </div>
     )
 }
 

@@ -3,7 +3,9 @@ import './HTLink.css';
 
 function HTLink() {
     return (
-        <div></div>
+        <div>
+            <img src="images/link.png" alt="link" />
+        </div>
     )
 }
 

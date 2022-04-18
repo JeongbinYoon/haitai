@@ -3,7 +3,10 @@ import './HTMain.css';
 
 function HTMain() {
     return (
-        <div></div>
+        <div>
+            <img src="images/main.png" alt="main" />
+
+        </div>
     )
 }
 

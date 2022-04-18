@@ -3,7 +3,9 @@ import './HTSweetNews.css';
 
 function HTSweetNews() {
     return (
-        <div></div>
+        <div>
+            <img src="images/sweetnews.png" alt="sweetnews" />
+        </div>
     )
 }
 
