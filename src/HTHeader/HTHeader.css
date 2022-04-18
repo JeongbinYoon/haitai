@@ -1,0 +1,8 @@
+.HTHeader {
+    text-align: center;
+}
+  
+.HTHeader-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
