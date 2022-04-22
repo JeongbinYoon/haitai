@@ -1,0 +1,77 @@
+.HTHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  height: 87px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav > ul > li {
+  margin: 0 35px;
+}
+.nav > ul a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #4c4c4c;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.HTHeader-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navRight {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.navRight ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 5px;
+  font-size: 10px;
+}
+
+.navRight ul > li a {
+  color: #969696;
+  cursor: pointer;
+}
+
+.searchBox {
+  display: flex;
+  position: relative;
+}
+
+.navRight .search {
+  height: 24px;
+  color: #bbb;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 5px 3px 10px;
+  border: 1px solid #ccc;
+}
+
+.navRight .searchBtn {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #bbb;
+}
