@@ -42,3 +42,7 @@
 .item a:hover {
   color: #ed1d85;
 }
+
+.active {
+  color: #ed1d85 !important;
+}

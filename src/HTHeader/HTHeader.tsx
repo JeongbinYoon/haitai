@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HTHeader.module.css";
 import HTHeader_sub from "./HTHeader_sub";
 
-function HTHeader() {
+const HTHeader = () => {
+  const [isListHover, setIsListHover] = useState(false);
+  const [hoverTargetClass, setHoverTargetClass] = useState("");
+
   return (
     <>
       <div className={styles.HTHeader}>
@@ -15,19 +18,69 @@ function HTHeader() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="#">제품소개</a>
+              <a
+                className="li1"
+                onMouseOver={(e) => {
+                  setHoverTargetClass(e.currentTarget.className);
+                  setIsListHover(true);
+                }}
+                onMouseOut={() => setIsListHover(false)}
+                href="#"
+              >
+                제품소개
+              </a>
             </li>
             <li>
-              <a href="#">달콤한 세상</a>
+              <a
+                className="li2"
+                onMouseOver={(e) => {
+                  setHoverTargetClass(e.currentTarget.className);
+                  setIsListHover(true);
+                }}
+                onMouseOut={() => setIsListHover(false)}
+                href="#"
+              >
+                달콤한 세상
+              </a>
             </li>
             <li>
-              <a href="#">이벤트</a>
+              <a
+                className="li3"
+                onMouseOver={(e) => {
+                  setHoverTargetClass(e.currentTarget.className);
+                  setIsListHover(true);
+                }}
+                onMouseOut={() => setIsListHover(false)}
+                href="#"
+              >
+                이벤트
+              </a>
             </li>
             <li>
-              <a href="#">고객센터</a>
+              <a
+                className="li4"
+                onMouseOver={(e) => {
+                  setHoverTargetClass(e.currentTarget.className);
+                  setIsListHover(true);
+                }}
+                onMouseOut={() => setIsListHover(false)}
+                href="#"
+              >
+                고객센터
+              </a>
             </li>
             <li>
-              <a href="#">회사소개</a>
+              <a
+                className="li5"
+                onMouseOver={(e) => {
+                  setHoverTargetClass(e.currentTarget.className);
+                  setIsListHover(true);
+                }}
+                onMouseOut={() => setIsListHover(false)}
+                href="#"
+              >
+                회사소개
+              </a>
             </li>
           </ul>
 
@@ -58,9 +111,14 @@ function HTHeader() {
           </div>
         </nav>
       </div>
-      <HTHeader_sub />
+      <HTHeader_sub
+        isListHover={isListHover}
+        setIsListHover={setIsListHover}
+        hoverTargetClass={hoverTargetClass}
+        setHoverTarget={setHoverTargetClass}
+      />
     </>
   );
-}
+};
 
 export default HTHeader;
