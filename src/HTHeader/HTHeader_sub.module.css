@@ -11,11 +11,62 @@
   margin: 0 auto;
 }
 
-.navImg {
+.navImgBox {
   width: 218px;
   height: 258px;
   overflow: hidden;
+  /* position: relative; */
 }
+
+/* NavImg animation*/
+img[class|="navImg"] {
+  position: relative;
+}
+img[class|="navImg"][class$="0"] {
+  top: 0px;
+}
+
+img[class|="navImg"][class$="1"] {
+  top: -258px;
+}
+
+img[class|="navImg"][class$="2"] {
+  top: -516px;
+}
+
+img[class|="navImg"][class$="3"] {
+  top: -774px;
+}
+
+img[class|="navImg"][class$="4"] {
+  top: -1032px;
+}
+
+img[class|="navImg"][class$="5"] {
+  top: -1290px;
+}
+
+img[class|="navImg"][class$="6"] {
+  top: -1548px;
+}
+
+img[class|="navImg"][class$="7"] {
+  top: -1806px;
+}
+
+img[class|="navImg"][class$="8"] {
+  top: -2064px;
+}
+
+img[class|="navImg"][class$="9"] {
+  top: -2322px;
+}
+
+img[class|="navImg"][class$="10"] {
+  top: -2580px;
+}
+
+/* /NavImg animation */
 
 .items {
   display: flex;

@@ -15,41 +15,59 @@ const HTHeader_sub: React.FunctionComponent<HeaderHoverProps> = ({
   hoverTargetClass,
   setHoverTarget,
 }) => {
-  console.log(isListHover);
-  const [subImg, setSubImg] = useState("./images/img_subNav00.png");
+  const [navImg, setNavImg] = useState("./images/img_subNav00.png");
+  const [index, setIndex] = useState(0);
+  let i = 0;
 
   useEffect(() => {
     if (isListHover === true) {
       if (hoverTargetClass === "li1") {
         document.getElementsByClassName("li1")[0].classList.add(styles.active);
-        setSubImg("./images/img_subNav00.png");
+        setNavImg("./images/img_subNav00.png");
+        setInterval(() => {
+          setIndex((i += 1));
+        }, 100);
       } else if (hoverTargetClass === "li2") {
         document.getElementsByClassName("li2")[0].classList.add(styles.active);
-        setSubImg("./images/img_subNav10.png");
+        setNavImg("./images/img_subNav10.png");
+        setInterval(() => {
+          setIndex((i += 1));
+        }, 100);
       } else if (hoverTargetClass === "li3") {
-        setSubImg("./images/img_subNav20.png");
         document.getElementsByClassName("li3")[0].classList.add(styles.active);
+        setNavImg("./images/img_subNav20.png");
+        setInterval(() => {
+          setIndex((i += 1));
+        }, 100);
       } else if (hoverTargetClass === "li4") {
-        setSubImg("./images/img_subNav30.png");
         document.getElementsByClassName("li4")[0].classList.add(styles.active);
+        setNavImg("./images/img_subNav30.png");
+        setInterval(() => {
+          setIndex((i += 1));
+        }, 100);
       } else if (hoverTargetClass === "li5") {
-        setSubImg("./images/img_subNav40.png");
         document.getElementsByClassName("li5")[0].classList.add(styles.active);
+        setNavImg("./images/img_subNav40.png");
+        setInterval(() => {
+          setIndex((i += 1));
+        }, 100);
       }
+
+      // console.log(document.getElementsByClassName("navImg")[0]);
     } else {
       document.getElementsByClassName(styles.active)[0] &&
         document
           .getElementsByClassName(styles.active)[0]
           .classList.remove(styles.active);
     }
-    console.log(subImg);
-  }, [subImg, isListHover]);
+    // console.log(navImg);
+  }, [navImg, isListHover]);
 
   return (
     <div className={styles.subNav}>
       <div className={styles.container}>
-        <div className={styles.navImg}>
-          <img src={subImg} alt="navImg" />
+        <div className={styles.navImgBox}>
+          <img className={`navImg-${index}`} src={navImg} alt="navImg" />
         </div>
         <ul className={styles.items}>
           <li className={styles.item}>
