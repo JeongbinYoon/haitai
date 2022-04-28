@@ -1,0 +1,140 @@
+.HTHoneyStory {
+  position: relative;
+  height: calc(100vh - 87px);
+  overflow: hidden;
+}
+
+.backgroundImg {
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundImg2 {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.titleImg {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.caption {
+  width: 100%;
+  position: absolute;
+  top: 190px;
+  text-align: center;
+  color: #6e6037;
+  font-weight: 600;
+}
+
+/* sub */
+.sub {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subLeft,
+.subRight {
+  width: 215px;
+}
+
+.subLeft .imgBox,
+.subRight .imgBox {
+  width: 88px;
+  height: 107px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.subLeft .imgBox img,
+.subRight .imgBox img {
+  width: 100%;
+  position: relative;
+  top: -2252px;
+}
+
+.subLeft h3,
+.subRight h3 {
+  margin: 0;
+}
+
+.subLeft p,
+.subRight p {
+  margin: 10px 0 0 0;
+  color: #876e3f;
+  font-size: 14px;
+  letter-spacing: -1.5px;
+  line-height: 20px;
+}
+
+/* Bees */
+.honeypot {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+}
+
+.honeypot .bee1 {
+  width: 428px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.honeypot .bee1 img {
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.honeypot .bee2 {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: 83px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.honeypot .bee2 img {
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.honeypot2 {
+  position: absolute;
+  top: 555px;
+  left: 880px;
+}
+
+.honeypot2 .bee3 {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  width: 130px;
+  height: 148px;
+  overflow: hidden;
+}
+
+.honeypot .bee3 img {
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.honeypot2 .pot {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
