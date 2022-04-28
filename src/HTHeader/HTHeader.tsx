@@ -111,12 +111,12 @@ const HTHeader = () => {
           </div>
         </nav>
       </div>
-      <HTHeader_sub
+      {/* <HTHeader_sub
         isListHover={isListHover}
         setIsListHover={setIsListHover}
         hoverTargetClass={hoverTargetClass}
         setHoverTarget={setHoverTargetClass}
-      />
+      /> */}
     </>
   );
 };

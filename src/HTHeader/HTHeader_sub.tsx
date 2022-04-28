@@ -1,4 +1,10 @@
-import React, { useState, useEffect, Dispatch, SetStateAction } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  Dispatch,
+  SetStateAction,
+} from "react";
 import styles from "./HTHeader_sub.module.css";
 
 interface HeaderHoverProps {
@@ -19,48 +25,48 @@ const HTHeader_sub: React.FunctionComponent<HeaderHoverProps> = ({
   const [index, setIndex] = useState(0);
   let i = 0;
 
+  let interval;
+  let intervalCallback = () => {
+    if (i != 9) {
+      setIndex((i += 1));
+    }
+  };
+
+  useEffect(() => {
+    if (isListHover === true) {
+      console.log(document.getElementsByClassName(".HTHeader")[0]);
+    }
+  }, [isListHover]);
+
   useEffect(() => {
     if (isListHover === true) {
       if (hoverTargetClass === "li1") {
         document.getElementsByClassName("li1")[0].classList.add(styles.active);
         setNavImg("./images/img_subNav00.png");
-        setInterval(() => {
-          setIndex((i += 1));
-        }, 100);
+        interval = setInterval(intervalCallback, 100);
       } else if (hoverTargetClass === "li2") {
         document.getElementsByClassName("li2")[0].classList.add(styles.active);
         setNavImg("./images/img_subNav10.png");
-        setInterval(() => {
-          setIndex((i += 1));
-        }, 100);
+        interval = setInterval(intervalCallback, 100);
       } else if (hoverTargetClass === "li3") {
         document.getElementsByClassName("li3")[0].classList.add(styles.active);
         setNavImg("./images/img_subNav20.png");
-        setInterval(() => {
-          setIndex((i += 1));
-        }, 100);
+        interval = setInterval(intervalCallback, 100);
       } else if (hoverTargetClass === "li4") {
         document.getElementsByClassName("li4")[0].classList.add(styles.active);
         setNavImg("./images/img_subNav30.png");
-        setInterval(() => {
-          setIndex((i += 1));
-        }, 100);
+        interval = setInterval(intervalCallback, 100);
       } else if (hoverTargetClass === "li5") {
         document.getElementsByClassName("li5")[0].classList.add(styles.active);
         setNavImg("./images/img_subNav40.png");
-        setInterval(() => {
-          setIndex((i += 1));
-        }, 100);
+        interval = setInterval(intervalCallback, 100);
       }
-
-      // console.log(document.getElementsByClassName("navImg")[0]);
     } else {
       document.getElementsByClassName(styles.active)[0] &&
         document
           .getElementsByClassName(styles.active)[0]
           .classList.remove(styles.active);
     }
-    // console.log(navImg);
   }, [navImg, isListHover]);
 
   return (
