@@ -1,0 +1,35 @@
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 450px; */
+  padding: 50px;
+}
+
+.caption {
+  text-align: center;
+  color: #4d4b46;
+}
+
+.caption h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #73706a;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.imgs {
+  width: 816px;
+}
+
+.company img {
+  margin: 0 30px;
+}
