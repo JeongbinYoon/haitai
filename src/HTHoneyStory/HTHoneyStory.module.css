@@ -11,7 +11,7 @@
 
 .backgroundImg2 {
   position: absolute;
-  top: 220px;
+  top: 240px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -38,7 +38,7 @@
   justify-content: space-between;
   width: 1100px;
   position: absolute;
-  top: 250px;
+  top: 270px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -81,8 +81,8 @@
 /* Bees */
 .honeypot {
   position: absolute;
-  top: 500px;
-  left: 250px;
+  top: 540px;
+  left: 400px;
 }
 
 .honeypot .bee1 {
@@ -114,8 +114,8 @@
 
 .honeypot2 {
   position: absolute;
-  top: 555px;
-  left: 880px;
+  top: 560px;
+  left: 1030px;
 }
 
 .honeypot2 .bee3 {
@@ -127,7 +127,7 @@
   overflow: hidden;
 }
 
-.honeypot .bee3 img {
+.honeypot2 .bee3 img {
   width: 100%;
   position: relative;
   top: 0px;
