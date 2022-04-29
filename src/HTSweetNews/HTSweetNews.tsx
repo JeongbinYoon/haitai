@@ -150,7 +150,7 @@ function HTSweetNews() {
                     alt="logo"
                   />
                   <div>
-                    <a href="#">해태제과(HAITAI)</a>
+                    <span>해태제과(HAITAI)</span>
                     <button>페이지 좋아요</button>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ function HTSweetNews() {
                     alt="logo"
                   />
                   <div>
-                    <a href="#">해태제과(HAITAI)</a>
+                    <span>해태제과(HAITAI)</span>
                     <button>페이지 좋아요</button>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ function HTSweetNews() {
                     alt="logo"
                   />
                   <div>
-                    <a href="#">해태제과(HAITAI)</a>
+                    <span>해태제과(HAITAI)</span>
                     <button>페이지 좋아요</button>
                   </div>
                 </div>

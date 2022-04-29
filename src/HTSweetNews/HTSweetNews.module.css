@@ -1,7 +1,6 @@
 .HTSweetNews {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   height: calc(100vh - 87px);
   background-color: #e7e1d3;
@@ -120,10 +119,9 @@
   margin-right: 10px;
 }
 
-.facebook .itemBg > div a {
+.facebook .itemBg > div span {
   color: #fff;
   font-size: 18px;
-  font-weight: 700;
 }
 
 .facebook .itemBg > div button {

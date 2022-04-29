@@ -20,7 +20,6 @@ const Main_text = () => {
         setIndex(0);
         setTextPosY(0);
       }
-      console.log(index);
     }, 100);
     return () => clearInterval(countUp);
   }, [index, textPosY]);

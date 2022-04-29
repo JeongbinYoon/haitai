@@ -11,7 +11,7 @@ const HTHeader = () => {
       <div className={styles.HTHeader}>
         <h1>
           <a href="#">
-            <img src="images/logo.png" alt="logo" />
+            <img src="images/header/logo.png" alt="logo" />
           </a>
         </h1>
 
