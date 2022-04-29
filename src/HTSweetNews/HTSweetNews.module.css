@@ -1,0 +1,134 @@
+.HTSweetNews {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: calc(100vh - 87px);
+  background-color: #e7e1d3;
+}
+
+.caption {
+  margin: 0;
+  color: #737067;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.notice h3,
+.facebook h3 {
+  margin: 0;
+  color: #8c897e;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.notice {
+  margin-top: 50px;
+}
+
+.facebook {
+  margin-top: 30px;
+}
+
+.notice .items,
+.facebook .items {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.notice .item,
+.facebook .item {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+.notice .item:nth-child(3),
+.facebook .item:nth-child(3) {
+  margin-right: 0;
+}
+
+.notice .item_header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.notice .item_header span:first-child {
+  color: #ec1d85;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.notice .item_header span:last-child {
+  color: #777;
+  font-size: 12px;
+}
+
+.notice .item_body {
+  text-overflow: ellipsis;
+  height: 130px;
+}
+
+.notice .item_body p:first-child {
+  color: #4d4d4d;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 23px;
+}
+
+.notice .item_body p:last-child {
+  color: #a6a198;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.facebook .itemBg {
+  height: 100%;
+}
+
+.facebook .bgGradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.facebook .itemBg .logo {
+  width: 54px;
+  height: 54px;
+  border: 3px solid #fff;
+  margin-right: 10px;
+}
+
+.facebook .itemBg > div a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.facebook .itemBg > div button {
+  background-color: #ebedf0;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 5px;
+}
