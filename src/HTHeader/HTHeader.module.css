@@ -15,25 +15,27 @@
 
 .nav {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav > ul {
   display: flex;
+  height: 100%;
+  margin: 0;
   list-style: none;
 }
 
 .nav > ul > li {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 140px;
 }
 
 .nav > ul a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   color: #4c4c4c;
   font-size: 17px;
   font-weight: 700;

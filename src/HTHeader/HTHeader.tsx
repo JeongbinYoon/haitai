@@ -4,7 +4,12 @@ import HTHeader_sub from "./HTHeader_sub";
 
 const HTHeader = () => {
   const [isListHover, setIsListHover] = useState(false);
+  const [isULMouseOver, setIsULMouseOver] = useState(false);
   const [hoverTargetClass, setHoverTargetClass] = useState("");
+
+  let handleSubNavOver = (isULMouseOver: boolean) => {
+    setIsULMouseOver(isULMouseOver);
+  };
 
   return (
     <>
@@ -16,7 +21,11 @@ const HTHeader = () => {
         </h1>
 
         <nav className={styles.nav}>
-          <ul>
+          <ul
+            onMouseEnter={() => {
+              setIsULMouseOver(true);
+            }}
+          >
             <li>
               <a
                 className="li1"
@@ -24,7 +33,9 @@ const HTHeader = () => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);
                 }}
-                onMouseOut={() => setIsListHover(false)}
+                onMouseOut={() => {
+                  setIsListHover(false);
+                }}
                 href="#"
               >
                 제품소개
@@ -111,12 +122,15 @@ const HTHeader = () => {
           </div>
         </nav>
       </div>
-      {/* <HTHeader_sub
-        isListHover={isListHover}
-        setIsListHover={setIsListHover}
-        hoverTargetClass={hoverTargetClass}
-        setHoverTarget={setHoverTargetClass}
-      /> */}
+      {isULMouseOver && (
+        <HTHeader_sub
+          isListHover={isListHover}
+          setIsListHover={setIsListHover}
+          hoverTargetClass={hoverTargetClass}
+          setHoverTarget={setHoverTargetClass}
+          onSubNavOver={handleSubNavOver}
+        />
+      )}
     </>
   );
 };
