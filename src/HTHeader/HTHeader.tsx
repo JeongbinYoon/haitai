@@ -28,7 +28,7 @@ const HTHeader = () => {
           >
             <li>
               <a
-                className="li1"
+                className="menu1"
                 onMouseOver={(e) => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);
@@ -43,7 +43,7 @@ const HTHeader = () => {
             </li>
             <li>
               <a
-                className="li2"
+                className="menu2"
                 onMouseOver={(e) => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);
@@ -56,7 +56,7 @@ const HTHeader = () => {
             </li>
             <li>
               <a
-                className="li3"
+                className="menu3"
                 onMouseOver={(e) => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);
@@ -69,7 +69,7 @@ const HTHeader = () => {
             </li>
             <li>
               <a
-                className="li4"
+                className="menu4"
                 onMouseOver={(e) => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);
@@ -82,7 +82,7 @@ const HTHeader = () => {
             </li>
             <li>
               <a
-                className="li5"
+                className="menu5"
                 onMouseOver={(e) => {
                   setHoverTargetClass(e.currentTarget.className);
                   setIsListHover(true);

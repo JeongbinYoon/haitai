@@ -1,6 +1,6 @@
 .HTHoneyStory {
   position: relative;
-  height: calc(100vh - 87px);
+  height: calc(100vh);
   overflow: hidden;
 }
 
@@ -11,14 +11,14 @@
 
 .backgroundImg2 {
   position: absolute;
-  top: 240px;
+  top: 327px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .titleImg {
   position: absolute;
-  top: 50px;
+  top: 137px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -26,7 +26,7 @@
 .caption {
   width: 100%;
   position: absolute;
-  top: 190px;
+  top: 277px;
   text-align: center;
   color: #6e6037;
   font-weight: 600;
@@ -38,7 +38,7 @@
   justify-content: space-between;
   width: 1100px;
   position: absolute;
-  top: 270px;
+  top: 357px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -61,7 +61,6 @@
 .subRight .imgBox img {
   width: 100%;
   position: relative;
-  top: -2252px;
 }
 
 .subLeft h3,
@@ -81,7 +80,7 @@
 /* Bees */
 .honeypot {
   position: absolute;
-  top: 540px;
+  top: 627px;
   left: 400px;
 }
 
@@ -94,7 +93,6 @@
 .honeypot .bee1 img {
   width: 100%;
   position: relative;
-  top: 0px;
 }
 
 .honeypot .bee2 {
@@ -109,12 +107,11 @@
 .honeypot .bee2 img {
   width: 100%;
   position: relative;
-  top: 0px;
 }
 
 .honeypot2 {
   position: absolute;
-  top: 560px;
+  top: 647px;
   left: 1030px;
 }
 
@@ -130,7 +127,6 @@
 .honeypot2 .bee3 img {
   width: 100%;
   position: relative;
-  top: 0px;
 }
 
 .honeypot2 .pot {

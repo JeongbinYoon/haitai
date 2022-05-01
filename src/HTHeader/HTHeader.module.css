@@ -41,6 +41,10 @@
   font-weight: 700;
 }
 
+.nav > ul a:hover {
+  color: #ed1d85;
+}
+
 .HTHeader-logo {
   height: 40vmin;
   pointer-events: none;
