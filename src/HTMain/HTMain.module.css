@@ -1,10 +1,19 @@
 .HTMain {
   position: relative;
   margin-top: 87px;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.HTMain::-webkit-scrollbar {
+  display: none;
+}
+
+.bg {
+  height: calc(100vh - 87px);
 }
 
 .bg_img {
-  min-height: calc(100vh - 87px);
   transform: translateX(calc(50vw - 50%));
 }
 
