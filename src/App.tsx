@@ -16,7 +16,6 @@ import "fullpage.js/dist/jquery.fullpage.min.css";
 function App(): JSX.Element {
   $((): void => {
     ($("#fullpage") as any).fullpage({ scrollOverflow: true });
-    console.log("hi");
   });
 
   return (
